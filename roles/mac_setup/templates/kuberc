@@ -1,0 +1,30 @@
+source <(kubectl completion bash)
+
+# kubectl
+alias k="kubectl"
+alias pods="kubectl get pods -o wide --all-namespaces"
+alias svc="kubectl get svc -o wide --all-namespaces"
+alias jobs="kubectl get jobs -o wide --all-namespaces"
+alias ingress="kubectl get ingress -o wide --all-namespaces"
+alias nodes="kubectl get nodes -o wide"
+alias set-kubctl-dev="kubectl config use-context cluster.dev.automox-dev.com"
+alias set-kubectl-prod="kubectl config use-context cluster.prod.automox.com"
+
+alias kc='k config view --minify | grep name'
+alias kdp='kubectl describe pod'
+alias krh='kubectl run --help | more'
+alias ugh='kubectl get --help | more'
+alias c='clear'
+alias kd='kubectl describe pod'
+alias ke='kubectl explain'
+alias kf='kubectl create -f'
+alias kg='kubectl get pods --show-labels'
+alias kr='kubectl replace -f'
+alias kh='kubectl --help | more'
+alias krh='kubectl run --help | more'
+alias ks='kubectl get namespaces'
+alias kga='k get pod --all-namespaces'
+alias kgaa='kubectl get all --show-labels'
+
+# Allows kubectl autocomplete to work with kubctl alias a 'k'
+complete -F __start_kubectl k
