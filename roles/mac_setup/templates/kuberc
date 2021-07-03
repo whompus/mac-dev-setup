@@ -1,3 +1,5 @@
+# Ansible Managed # 
+
 source <(kubectl completion {{ default_shell.split('/')[-1] | default('bash') }})
 
 # kubectl

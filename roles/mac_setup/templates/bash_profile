@@ -1,3 +1,5 @@
+# Ansible Managed # 
+
 PATH={{ homebrew_path }}:$PATH
 PATH=$HOME/bin:$PATH
 export PATH
