@@ -1,15 +1,15 @@
 ---
-dotfiles_install: True
-dotfiles_repo: https://raw.githubusercontent.com/nickmaccarthy/dotfiles/master
-dotfiles_items:
-    - bash_profile
-    - vimrc
-    - kuberc
+# dotfiles_install: True
+# dotfiles_repo: https://raw.githubusercontent.com/nickmaccarthy/dotfiles/master
+# dotfiles_items:
+#     - bash_profile
+#     - vimrc
+#     - kuberc
 
 default_shell: /bin/zsh
 
 zsh:
-  theme: "rkj-repos"
+  theme: "jreese"
   p10k:
     enabled: yes 
     managed: no
